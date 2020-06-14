@@ -19,6 +19,12 @@ body {
   background: #F4F6F7 ;
 }
 
+.black {
+	height: 40px;
+	background: #3498DB;
+	border-top: 3px solid black;
+}
+
 .head {
   color: #F4F6F7 ;
   background: #3498DB ;
@@ -27,7 +33,7 @@ body {
   font-size: 2.1vw;
   font-weight: solid;
   height: 11vh;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 #main-doc header {
@@ -39,15 +45,15 @@ body {
 }
 
 #navbar ul {
-  height: 85vh;
+  height: 80vh;
   padding: 0;
   margin-top: 0px;
   overflow-y: auto;
   overflow-x: hidden;
+  margin-bottom: 0px;
 }
 
 #navbar li {
-  color: black;
   border-top: 1px solid;
   list-style: none;
   position: relative;
@@ -57,7 +63,15 @@ body {
 }
 
 #navbar li:last-child {
-	border-bottom: 2px solid;
+	border-bottom: 0;
+}
+
+#navbar li:hover {
+	background: black;
+}
+
+#navbar a:hover {
+	color: white;
 }
 
 #navbar li:first-child {
@@ -104,7 +118,7 @@ code {
   border-radius: 5px;
 }
 
-@media only screen and (max-height: 350px) {
+@media only screen and (max-height: 450px) {
 #navbar a {
   display: block;
   padding: 10px 20px;
@@ -116,14 +130,15 @@ code {
 
 .head {
   height: 11vh;
+  font-size: 23px;
 }
 
 #navbar ul {
-  height: 79vh;
+  height: 77vh;
 }
 
 #navbar li:last-child {
-	border-bottom: 2px solid;
+	border-bottom: 0;
 }
 }
 
