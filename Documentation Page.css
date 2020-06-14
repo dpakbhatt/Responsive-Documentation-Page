@@ -21,6 +21,7 @@ body {
 
 .black {
 	height: 40px;
+	display: block;
 	background: #3498DB;
 	border-top: 3px solid black;
 }
@@ -133,6 +134,10 @@ code {
   font-size: 23px;
 }
 
+.black {
+	visibility: hidden;
+}
+
 #navbar ul {
   height: 77vh;
 }
@@ -153,6 +158,10 @@ code {
 	padding-top: 18px;
 	height: 60px;
   }
+  
+  .black {
+	visibility: hidden;
+}
 
   #navbar {
     background-color: #F4F6F7;
